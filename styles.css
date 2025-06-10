@@ -1,0 +1,265 @@
+@import url(reset.css);
+body {
+  font-family: Poppins;
+  margin-top: 150px;
+}
+
+:root {
+  --color-1: #070707;
+  --color-2: #494949;
+}
+
+p {
+  line-height: normal;
+}
+
+b {
+  font-weight: bold;
+  color: var(--color-1);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container > section {
+  width: 100%;
+  max-width: 800px;
+  padding: 0 1rem;
+}
+
+.presentation {
+  display: flex;
+  align-items: center;
+  max-width: 800px;
+  gap: 40px;
+}
+
+.name-and-bio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.name-and-bio h1 {
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+.name-and-bio p {
+  max-width: 600px;
+  font-size: 1rem;
+  line-height: normal;
+  font-weight: 4 00;
+}
+
+.profile-picture img {
+  object-fit: cover;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-position: top;
+}
+
+section {
+  margin-top: 40px;
+}
+
+section h2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.about p {
+  font-size: 1rem;
+  line-height: normal;
+  font-weight: 4 00;
+  color: var(--color-2);
+}
+
+.work-logo {
+  object-fit: cover;
+  max-width: 50px;
+  border-radius: 50%;
+  background-color: white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.work-experience ul li {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.work-experience ul li h3 {
+  font-weight: 600;
+}
+
+.work-text {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.company-and-role {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.work-text span {
+  display: block;
+  color: var(--color-2);
+}
+
+.work-text p {
+  color: var(--color-2);
+  font-size: 0.8rem;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  gap: 20px;
+}
+
+.skills ul {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 5px;
+}
+
+.skills ul li {
+  display: flex;
+  font-size: 0.8rem;
+  background-color: var(--color-1);
+  color: white;
+  align-items: center;
+  justify-content: center;
+  height: 45px;
+  width: 96px;
+  border-radius: 5px;
+}
+
+.skills ul li:hover {
+  background-image: linear-gradient(
+    to right top,
+    #070707,
+    #1a1a1a,
+    #292929,
+    #393939,
+    #494949
+  );
+  cursor: pointer;
+}
+
+.projects {
+  margin-top: 80px;
+}
+
+.projects h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.projects h4 {
+  text-align: center;
+  line-height: normal;
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0px 20px;
+}
+
+.card {
+  margin-top: 40px;
+  border: solid 2px #f3f3f3;
+  border-radius: 5px;
+}
+
+.card-text {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  gap: 10px;
+}
+
+.projects {
+  max-width: 500px;
+}
+
+.projects h1 {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.projects h3 {
+  font-weight: bold;
+}
+
+.card {
+  max-width: 380px;
+  overflow: hidden;
+}
+
+.card img {
+  object-fit: cover;
+  max-width: 400px;
+}
+
+.card-text ul {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  font-size: 0.9rem;
+}
+
+.technologies {
+  margin-top: 0px;
+}
+
+.technologies li {
+  text-align: center;
+  display: inline;
+  background-color: #f3f3f3;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.view-online {
+  margin-top: 0px;
+}
+
+.view-online li {
+  display: flex;
+  gap: 10px;
+  background-color: #070707;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.view-online li a {
+  text-decoration: none;
+  color: white;
+}
+
+.view-online li:hover {
+  background-image: linear-gradient(
+    to right top,
+    #070707,
+    #1a1a1a,
+    #292929,
+    #393939,
+    #494949
+  );
+  cursor: pointer;
+}
