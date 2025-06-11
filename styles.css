@@ -3,6 +3,9 @@ body {
   font-family: Poppins;
   margin-top: 100px;
   margin-bottom: 100px;
+  background-color: white;
+  color: black;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 :root {
@@ -54,7 +57,7 @@ b {
   max-width: 600px;
   font-size: 1rem;
   line-height: normal;
-  font-weight: 4 00;
+  font-weight: 400;
 }
 
 .profile-picture img {
@@ -78,7 +81,7 @@ section h2 {
 .about p {
   font-size: 1rem;
   line-height: normal;
-  font-weight: 4 00;
+  font-weight: 400;
   color: var(--color-2);
 }
 
@@ -206,6 +209,10 @@ ul {
   font-weight: bold;
 }
 
+.projects p {
+  font-size: 0.8rem;
+}
+
 .card {
   max-width: 380px;
   overflow: hidden;
@@ -213,7 +220,8 @@ ul {
 
 .card img {
   object-fit: cover;
-  max-width: 400px;
+  width: 100%;
+  height: auto;
 }
 
 .card-text ul {
@@ -277,8 +285,8 @@ ul {
   display: flex;
   text-align: center;
   flex-direction: row;
-  align-items: center;
   justify-content: center;
+  align-items: flex-start;
 }
 
 .certificate {
@@ -420,6 +428,12 @@ section,
   font-weight: bold;
 }
 
+.contact p a:hover {
+  text-decoration: none;
+  color: #23637a;
+  font-weight: bold;
+}
+
 footer {
   position: sticky;
   bottom: 0;
@@ -443,6 +457,11 @@ footer ul li a {
   color: black;
   text-decoration: none;
   font-size: 2rem;
+}
+
+.dark-mode {
+  background-color: #121212;
+  color: #f1f1f1;
 }
 
 footer ul li a:hover {
@@ -507,5 +526,138 @@ footer ul li a:hover {
     -webkit-filter: blur(0);
     filter: blur(0);
     opacity: 1;
+  }
+}
+
+@media (max-width: 992px) {
+  body {
+    margin: 60px 0;
+  }
+
+  .container {
+    margin: 0px 32px;
+  }
+  .container > section {
+    padding: 0 4vw;
+  }
+  .presentation {
+    gap: 24px;
+  }
+  .name-and-bio h1 {
+    font-size: 3rem;
+  }
+  .skills ul {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .skills ul li {
+    width: 130px;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    margin: 48px 0;
+  }
+
+  .container {
+    margin: 0px 32px;
+  }
+
+  .container > section {
+    padding: 0 6vw;
+  }
+  .presentation {
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 20px;
+  }
+  .profile-picture img {
+    width: 150px;
+    height: 150px;
+  }
+  .name-and-bio h1 {
+    font-size: 2.4rem;
+  }
+  .name-and-bio p {
+    font-size: 0.95rem;
+  }
+  .work-experience ul li {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  .work-logo {
+    max-width: 40px;
+  }
+  .work-text {
+    flex-direction: column;
+    gap: 4px;
+  }
+  .skills ul {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .projects h1 {
+    font-size: 2.2rem;
+  }
+  .projects-container {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .card {
+    max-width: 100%;
+  }
+  .certificates ul {
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+  footer ul {
+    padding: 12px 24px;
+    margin: 48px auto;
+  }
+}
+
+@media (max-width: 576px) {
+  body {
+    margin: 32px 0;
+  }
+
+  .container {
+    margin: 0px 32px;
+  }
+
+  .container > section {
+    padding: 0 7vw;
+  }
+  .name-and-bio h1 {
+    font-size: 2rem;
+  }
+  .name-and-bio p {
+    font-size: 0.9rem;
+  }
+  .skills ul {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .skills ul li {
+    height: 38px;
+    width: 100%;
+  }
+  .projects h1 {
+    font-size: 1.9rem;
+  }
+  .projects h4 {
+    font-size: 0.9rem;
+  }
+  .certificate img {
+    max-width: 130px;
+  }
+  .certificates-row-1,
+  .certificates-row-2 {
+    flex-direction: column;
+    gap: 24px;
+  }
+  footer ul {
+    gap: 20px;
+    margin: 40px auto;
   }
 }
